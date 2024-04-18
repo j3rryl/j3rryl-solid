@@ -2,7 +2,7 @@
 import { render } from "solid-js/web";
 
 import "./index.css";
-import { Route, RouteSectionProps, Router } from "@solidjs/router";
+import { A, Route, RouteSectionProps, Router } from "@solidjs/router";
 import { Users } from "./Users";
 import { Component, JSXElement } from "solid-js";
 import Home from "./App";
@@ -17,6 +17,8 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
 const App: Component<RouteSectionProps<unknown>> = (props) => (
   <>
     <h1>Site Title</h1>
+    <A href="/">Home</A>
+    <A href="/users">Users</A>
     {props.children}
   </>
 );
