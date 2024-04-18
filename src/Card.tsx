@@ -1,11 +1,11 @@
 import { Component } from "solid-js";
 
-const Card: Component<{ title: string; value: number }> = (props) => {
+const CardComponent: Component<{ title: string; value: number }> = (props) => {
   return (
     <>
-      <div>{props.title}</div>
+      <div class=" text-red-700">{props.title}</div>
       <div>{props.value}</div>
     </>
   );
 };
-export default Card;
+export default CardComponent;
